@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html  ng-app="myApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="node_modules/angular/angular.js"></script>
+<script src="module.js"></script>
+<script src="./controller/controller.js"></script>
+<script src="./factory/factory.js"></script>
+<script src="./services/sevices.js"></script>
+<body >
+    <div  class="control" ng-controller="appController as appCTRL">{{appCTRL.name}}</div>
+    <div ng-controller="appFactory as appFACT">{{appFACT.id}}</div>
+    <div ng-controller="appServices as appSERV">{{appSERV.address}}</div>
+    
+    
+</body>
+</html>
